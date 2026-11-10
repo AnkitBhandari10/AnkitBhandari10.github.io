@@ -13,7 +13,7 @@ export const Contact = () => {
         e.preventDefault()
 
         emailjs.sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
-        .then((result) => {
+        .then(() => {
             alert("Message Successfully Sent to Ankit!");
             setFormData({name: "", email: "", message: ""});
         }).catch(() => alert("Error! Please try again!"));
@@ -31,6 +31,13 @@ export const Contact = () => {
           <h2 className="text-3xl font-bold mb-8 bg-green-300 bg-clip-text text-transparent text-center">
             Get in Touch with Me:
           </h2>
+          <p className="text-center text-gray-300 mb-8">
+            Find me on{" "}
+            <a href="https://github.com/AnkitBhandari10" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">GitHub</a>
+            {" "}and{" "}
+            <a href="https://www.linkedin.com/in/ankitbh1" target="_blank" rel="noopener noreferrer" className="text-green-400 hover:text-green-300 underline">LinkedIn</a>
+            , or send me a message below.
+          </p>
           <form className="space-y-6" onSubmit = {handleSubmit}>
             <div className="relative">
               <input 
