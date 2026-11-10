@@ -12,7 +12,7 @@ export const Home = () => {
                 </h1>
 
                 <p className = "text-green-400-text-lg mb-8 max-w-lg mx-auto">
-                 I'm an aspiring Software Engineer from Calgary, Alberta. Keep scrolling to learn more about who I am!
+                 I'm a Computer Science (Co-op) student at UBC and an aspiring Software Engineer based in Vancouver, BC. Keep scrolling to learn more about who I am!
                 </p>
                 
                 <div className = "flex justify-center space-x-4">
