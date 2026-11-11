@@ -1,36 +1,72 @@
 @import "tailwindcss";
 
-html, 
+/* ---- Theme ---------------------------------------------------------- */
+:root {
+  --page: #e8ebef;      /* soft gray page */
+  --surface: #f4f5f7;   /* lighter gray panels */
+  --line: #d3d8e0;      /* hairline borders */
+  --bubble: #d5dcec;    /* pale periwinkle bubbles */
+  --navy: #1f2f57;      /* headings, header, accents */
+  --ink: #000000;       /* body text */
+  --muted: #4a5466;     /* secondary text */
+
+  --font-head: "Space Mono", ui-monospace, monospace;
+  --font-body: "Space Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 6rem; }
+
+html,
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
-  font-family: "Space Mono", sans-serif;
-  background: #0a0a0a;
-  color: #f3f4f6;
+  background: var(--page);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
 }
 
+h1, h2, h3, h4 { font-family: var(--font-head); color: var(--navy); }
 
-@layer utilities {
-  @keyframes blink {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
+::selection { background: var(--bubble); color: var(--navy); }
 
-  .animate-blink{
-    animation: blink 0.8s step-end infinite;
-  }
+:focus-visible { outline: 2px solid var(--navy); outline-offset: 3px; border-radius: 6px; }
+
+/* ---- Header: the one animated moment ------------------------------- */
+@keyframes inflate {
+  0%   { transform: scale(0.35, 0.6); opacity: 0; border-radius: 999px; }
+  55%  { transform: scale(1.03, 0.94); opacity: 1; }
+  75%  { transform: scale(0.99, 1.03); }
+  100% { transform: scale(1, 1); }
 }
-.reveal{
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+@keyframes pop-in {
+  0%   { transform: translateY(8px) scale(0.8); opacity: 0; }
+  70%  { transform: translateY(-2px) scale(1.06); opacity: 1; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
 }
+.header-pill { animation: inflate 0.7s cubic-bezier(.2,.9,.3,1.2) both; transform-origin: 50% 50%; }
+.header-pop { animation: pop-in 0.45s cubic-bezier(.2,.9,.3,1.3) both; }
 
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
+/* the navy bubble that slides between nav links */
+.nav-bubble {
+  transition:
+    left 0.45s cubic-bezier(.3,1.4,.5,1),
+    width 0.45s cubic-bezier(.3,1.4,.5,1),
+    transform 0.25s ease;
+}
+.nav-bubble.squish { transform: scaleY(0.82) scaleX(1.08); }
+
+.nav-link { transition: transform 0.2s cubic-bezier(.3,1.6,.5,1), color 0.2s ease; }
+.nav-link:hover { transform: scale(1.08); }
+.nav-link:active { transform: scale(0.94); }
+
+.pill-button { transition: transform 0.2s cubic-bezier(.3,1.6,.5,1), background-color 0.2s ease; }
+.pill-button:hover { transform: scale(1.05); }
+.pill-button:active { transform: scale(0.96); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .header-pill, .header-pop { animation: none; }
+  .nav-bubble, .nav-link, .pill-button { transition: none; }
+  .nav-link:hover, .pill-button:hover { transform: none; }
 }
