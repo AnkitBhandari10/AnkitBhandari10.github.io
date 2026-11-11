@@ -1,30 +1,32 @@
-import { ScrollReveal } from "../ScrollReveal"
-
-export const Home = () => { 
-    return (<section
-        id = "home" 
-        className = "min-h-screen flex items-center justify-center text-gray-400 bg-gray-900 body-font"//"min-h-screen flex items-center justify-center relative"
-        > 
-        <ScrollReveal>
-            <div className = "text-center z-10 px-4">
-                <h1 className = "text-5xl md:text-7xl font-bold mb-6 bg-green-300 bg-clip-text text-transparent leading-right">
-                    This is Ankit Bhandari
-                </h1>
-
-                <p className = "text-green-400-text-lg mb-8 max-w-lg mx-auto">
-                 I'm a Computer Science (Co-op) student at UBC and an aspiring Software Engineer based in Vancouver, BC. Keep scrolling to learn more about who I am!
-                </p>
-                
-                <div className = "flex justify-center space-x-4">
-                    <a 
-                      href = "#projects" 
-                      className = "bg-green-300 text-black py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
-                    >
-                        View My Projects
-                    </a>
-                </div>
-            </div>
-         </ScrollReveal>
-      </section>
-    );
+export const Home = () => {
+  return (
+    <section id="top" className="mx-auto max-w-5xl px-6 pt-20 pb-16 md:pt-28">
+      <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        Hi, I'm Ankit.
+      </h1>
+      <p className="mt-6 max-w-2xl text-lg leading-relaxed">
+        I'm a third-year Computer Science student in UBC's Co-op program, based in Vancouver.
+        I build full-stack web apps, and I like the small details that make software feel fast.
+      </p>
+      <p className="mt-4 max-w-2xl text-[var(--muted)]">
+        Currently looking for a January or Summer 2027 software engineering co-op.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-3">
+        <a
+          href="#projects"
+          className="pill-button rounded-full bg-[var(--navy)] text-[var(--page)] px-6 py-3 font-bold"
+        >
+          See my projects
+        </a>
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pill-button rounded-full bg-[var(--bubble)] text-[var(--navy)] px-6 py-3 font-bold"
+        >
+          Download resume
+        </a>
+      </div>
+    </section>
+  );
 };
