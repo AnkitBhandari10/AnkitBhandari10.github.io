@@ -4,7 +4,7 @@ import { ImageSlot } from "../ImageSlot";
 const projects = [
   {
     title: "Flockwork",
-    context: "UBC student hub, built at nwPlus HackCamp 2026. Won Best Use of Auth0.",
+    context: "UBC student hub. Won Best Use of Auth0 at nwPlus HackCamp 2026.",
     image: "/images/flockwork.png",
     points: [
       "Built the React front-end for study-buddy matching, skill swapping, project team-ups and a live campus activity map, with a 4-person team.",

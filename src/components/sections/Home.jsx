@@ -6,7 +6,7 @@ export const Home = () => {
       </h1>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed">
         I'm a third-year Computer Science student in UBC's Co-op program, based in Vancouver.
-        I build full-stack web apps, and I like the small details that make software feel fast.
+        I build full-stack web apps, and I like the small details that make software feel fast and meaningful.
       </p>
       <p className="mt-4 max-w-2xl text-[var(--muted)]">
         Currently looking for a January or Summer 2027 software engineering co-op.

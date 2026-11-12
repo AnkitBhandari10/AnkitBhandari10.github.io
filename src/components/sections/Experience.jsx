@@ -10,14 +10,6 @@ const jobs = [
       "Engineered LLM prompts in an Agile team to streamline day-to-day business workflows.",
     ],
   },
-  {
-    role: "Math Tutor",
-    org: "Sir Winston Churchill High School, Calgary, AB",
-    dates: "Sept 2022 – June 2024",
-    points: [
-      "Taught core math curricula, using practice assessments to find and close each student's learning gaps.",
-    ],
-  },
 ];
 
 export const Experience = () => {

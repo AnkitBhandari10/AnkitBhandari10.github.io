@@ -24,13 +24,13 @@ export const About = () => {
         <div>
           <h2 className="text-3xl font-bold">About me</h2>
           <p className="mt-5 leading-relaxed">
-            I grew up in Calgary and moved to Vancouver for UBC. I enjoy building apps end to end,
-            from React interfaces to REST APIs and databases. Last summer I interned at Global iTech
-            Systems, where I cut page load times in half by fixing slow database queries.
+            Born and raised in Calgary, I moved to Vancouver to study at UBC. I enjoy building websites and apps end to end,
+            from interactive React interfaces to REST APIs and secure databases. I've interned at Global iTech
+            Systems, where I contributed to frontend development and resolved backend issues affecting the company's database.
           </p>
           <p className="mt-4 leading-relaxed">
-            Most recently, my team won Best Use of Auth0 at nwPlus HackCamp 2026 with Flockwork,
-            a site that helps UBC students find study partners and collaborators.
+            Most recently, I teamed up with three peers at nwPlus HackCamp 2026 to work on Flockwork,
+            a website that helps UBC students find study partners and collaborators through verified and secure sign-ups. We ended up taking home Best Use of Auth0!
           </p>
 
           <dl className="mt-8 space-y-4">
