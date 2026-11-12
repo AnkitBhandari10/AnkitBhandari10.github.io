@@ -30,7 +30,7 @@ export const About = () => {
           </p>
           <p className="mt-4 leading-relaxed">
             Most recently, I teamed up with three peers at nwPlus HackCamp 2026 to work on Flockwork,
-            a website that helps UBC students find study partners and collaborators through verified and secure sign-ups. We ended up taking home Best Use of Auth0!
+            a platform that helps UBC students find study partners and collaborators through verified and secure sign-ups. We ended up taking home Best Use of Auth0!
           </p>
 
           <dl className="mt-8 space-y-4">
