@@ -53,6 +53,7 @@ body {
   max-width: 46rem;
   min-height: 0;
   overflow: hidden;
+  margin-top: 5vh;
 }
 
 .ts-panel-inner {
@@ -160,11 +161,11 @@ body {
 .ts-menu {
   grid-area: menu;
   align-self: end;
-  margin-bottom: 12vh;
+  margin-bottom: 22.5vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: clamp(1rem, 3vh, 2rem);
+  gap: clamp(1.5rem, 5vh, 3rem);
 }
 
 .ts-opt {
