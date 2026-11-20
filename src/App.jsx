@@ -31,7 +31,6 @@ const projects = [
   {
     title: "Flockwork",
     context: "UBC student platform for finding study partners, skill swaps and project teammates. Built with a 4-person team; won Best Use of Auth0 at nwPlus HackCamp 2026.",
-    image: "/images/flockwork.png",
     points: [
       "Built the Buddies and SkillShare swipe decks and mutual skill matching, ranking students by shared interests and the skills they can teach each other.",
       "Added profile fields and editing, and FastAPI endpoints that save students' projects on the server so others can browse them.",
@@ -55,8 +54,7 @@ const projects = [
     title: "This portfolio",
     context: "The site you're on now.",
     points: [
-      "Built with React and Vite, laid out like a game title screen.",
-      "Deploys automatically to GitHub Pages through a GitHub Actions workflow.",
+      "Built with React and Vite, laid out like a game title screen, and deployed to GitHub Pages with GitHub Actions.",
     ],
     tech: "React, Vite, GitHub Actions",
     link: { href: "https://github.com/AnkitBhandari10/AnkitBhandari10.github.io", label: "View the code" },
@@ -76,10 +74,6 @@ const About = () => (
       UBC students find study partners and collaborators through verified and secure sign-ups. We ended up taking
       home Best Use of Auth0!
     </p>
-    <figure className="ts-photo">
-      <img src="/images/gallery-1.jpg" alt="Ankit holding his prize in front of the nwPlus HackCamp 2026 banner" loading="lazy" />
-      <figcaption>Best Use of Auth0 at nwPlus HackCamp 2026</figcaption>
-    </figure>
     <p className="ts-note">Currently looking for a January or Summer 2027 software engineering co-op.</p>
     <dl className="ts-skills">
       {skills.map((s) => (
