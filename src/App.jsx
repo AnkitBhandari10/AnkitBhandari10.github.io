@@ -30,15 +30,16 @@ const jobs = [
 const projects = [
   {
     title: "Flockwork",
-    context: "UBC student hub. Won Best Use of Auth0 at nwPlus HackCamp 2026.",
+    context: "UBC student platform for finding study partners, skill swaps and project teammates. Built with a 4-person team; won Best Use of Auth0 at nwPlus HackCamp 2026.",
     image: "/images/flockwork.png",
     points: [
-      "Built the React front-end for study-buddy matching, skill swapping, project team-ups and a live campus activity map, with a 4-person team.",
-      "Designed a FastAPI REST back-end with SQLAlchemy models on PostgreSQL, shared by every feature.",
-      "Integrated Auth0 to limit sign-up to verified UBC emails, and validated access tokens on every protected endpoint.",
+      "Built the Buddies and SkillShare swipe decks and mutual skill matching, ranking students by shared interests and the skills they can teach each other.",
+      "Added profile fields and editing, and FastAPI endpoints that save students' projects on the server so others can browse them.",
+      "Built the Speed Matching page in React and gave Projects and Campus Activity their own pages.",
+      "Contributed to the Auth0 integration that limits sign-up to UBC emails, alongside teammates who led the authentication work.",
     ],
-    tech: "React, FastAPI, SQLAlchemy, PostgreSQL, Auth0",
-    link: { href: "https://flockwork.app.space/", label: "Visit Flockwork" },
+    tech: "React, TypeScript, FastAPI, SQLAlchemy, PostgreSQL, Auth0",
+    link: { href: "https://github.com/goople-tech/skillshare", label: "Source code" },
   },
   {
     title: "Flashidex",
