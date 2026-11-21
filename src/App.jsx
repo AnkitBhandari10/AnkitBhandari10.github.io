@@ -7,12 +7,6 @@ const links = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/ankitbh1" },
 ];
 
-const skills = [
-  { group: "Languages", items: "Java, Python, JavaScript, TypeScript, SQL, C/C++, PHP, HTML/CSS" },
-  { group: "Frameworks and libraries", items: "React, Node.js, Spring Boot, FastAPI, SQLAlchemy, Laravel, Tailwind CSS, Vite" },
-  { group: "Tools and platforms", items: "Git, GitHub, MySQL, PostgreSQL, Auth0, AWS (EC2), JUnit, Cypress, Selenium" },
-];
-
 const jobs = [
   {
     role: "Software Engineer Intern",
@@ -64,25 +58,18 @@ const projects = [
 const About = () => (
   <>
     <p>
-      Born and raised in Calgary, I moved to Vancouver to study Computer Science at UBC. I enjoy building websites
-      and apps end to end, from interactive React interfaces to REST APIs and secure databases. I've interned at
-      Global iTech Systems, where I contributed to frontend development and resolved backend issues affecting the
-      company's database.
+      I'm a third-year Computer Science co-op student at UBC who builds full-stack apps with
+      React, Java/Spring Boot and Python/FastAPI. I interned as a Software Engineer at Global
+      iTech Systems, where I sped up slow pages by fixing database queries and built React
+      components for the company's websites.
     </p>
     <p>
-      Most recently, I teamed up with three peers at nwPlus HackCamp 2026 to work on Flockwork, a platform that helps
-      UBC students find study partners and collaborators through verified and secure sign-ups. We ended up taking
-      home Best Use of Auth0!
+      At nwPlus HackCamp 2026, my team of four built Flockwork, a platform that helps UBC
+      students find study partners, and won Best Use of Auth0. Originally from Calgary, I'm
+      now based in Vancouver.
     </p>
     <p className="ts-note">Currently looking for a January or Summer 2027 software engineering co-op.</p>
-    <dl className="ts-skills">
-      {skills.map((s) => (
-        <div key={s.group}>
-          <dt>{s.group}</dt>
-          <dd>{s.items}</dd>
-        </div>
-      ))}
-    </dl>
+    
   </>
 );
 
